@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int factorial(int n){
+long long factorial(int n){
     // If zero is reached, return 1
     if (n == 0){
         return 1;
@@ -19,7 +19,7 @@ int main() {
     cin >> n;
 
     // Calculate factorial;
-    int n_factorial = factorial(n);
+    long long n_factorial = factorial(n);
 
     // Return factorial;
     cout << n << " factorial is:\n" << n_factorial << "\n";
