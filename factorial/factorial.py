@@ -1,10 +1,10 @@
-from subprocess import run, call, PIPE
+from subprocess import run, PIPE
 from pathlib import Path
 from decimal import Decimal
 
 
 def factorial(n):
-    """_summary_
+    """Calculates the factorial of n.
 
     Parameters
     ----------
@@ -14,7 +14,7 @@ def factorial(n):
     Returns
     -------
     int
-        The factorial of n
+        The factorial of n.
     """
 
     # Call the executable
