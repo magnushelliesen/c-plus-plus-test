@@ -3,22 +3,22 @@ from pathlib import Path
 from decimal import Decimal
 
 
-def fibbonachi(n):
-    """Calculates the fibbonachi number of order n.
+def fibonacci(n):
+    """Calculates the fibonacci number of order n.
 
     Parameters
     ----------
     n : int
-        Integer for which order the fibbonachi number is to be calculated.
+        Integer for which order the fibonacci number is to be calculated.
 
     Returns
     -------
     int
-        The n'th fibbonachi number.
+        The n'th fibonacci number.
     """
 
     # Call the executable
-    result = run([f'{Path(__file__).parent.resolve() / "fibbonachi"}', str(n)], stdout=PIPE, encoding='utf-8')
+    result = run([f'{Path(__file__).parent.resolve() / "fibonacci"}', str(n)], stdout=PIPE, encoding='utf-8')
 
     # I have to go via float to read scientific notation to int
     return int(Decimal(result.stdout.strip()))
